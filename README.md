@@ -21,13 +21,13 @@ To get started with the project, follow these steps:
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/your-username/your-repository.git
-```
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+   ```
 
 2. Install the required dependencies:
    ```bash
-   pip install -r requirements.txt`
+   pip install -r requirements.txt
    ```
 3. Set up the database:
    - Now, you need to create the database and the student table. You can do this by running the following commands in your terminal or command prompt:
