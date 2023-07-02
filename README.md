@@ -45,5 +45,5 @@ git clone https://github.com/your-username/your-repository.git
    ```
 5. Open a web browser and navigate to [http://localhost:5000](http://localhost:5000) to access the application. <br>
    Preview: <br>
-   ![image](staic/images/preview.png)
+   ![image](static/images/preview.png)
    
