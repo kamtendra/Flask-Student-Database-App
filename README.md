@@ -36,6 +36,8 @@ git clone https://github.com/your-username/your-repository.git
      ```
      ```python
       from app import db
+      from app import app
+      app.app_context().push()
       db.create_all()
       exit()
      ```
