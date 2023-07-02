@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Form</title>
+</head>
+<body>
+    <h1>Student Form</h1>
+    <form method="POST" action="/">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        <br><br>
+        <label for="college">College:</label>
+        <input type="text" name="college" id="college" required>
+        <br><br>
+        <label for="roll">Roll No:</label>
+        <input type="number" name="roll" id="roll" required>
+        <br><br>
+        <label for="branch">Branch:</label>
+        <input type="text" name="branch" id="branch" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Submitted Data:</h2>
+    <table border="2" style="border-collapse:collapse;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>College</th>
+                <th>Roll No</th>
+                <th>Branch</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for student in students %}
+            <tr>
+                <td><center>{{ student.name }}</center></td>
+                <td><center>{{ student.college }}</center></td>
+                <td><center>{{ student.roll }}</center></td>
+                <td><center>{{ student.branch }}</center></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
